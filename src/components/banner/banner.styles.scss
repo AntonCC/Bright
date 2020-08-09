@@ -1,0 +1,24 @@
+.banner {
+  padding: 5rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .side-a{
+      max-width: 500px;
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .side-b {
+      img {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 3px;
+      }
+    }
+  }
+}

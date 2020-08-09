@@ -1,0 +1,16 @@
+.card {
+  // max-width: 250px;
+  background: #F5F5F5;
+  box-shadow: 2px 1px 6px #B0B0B0;
+  padding: 1rem;
+  margin: auto;
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: #273c75;
+  }
+}

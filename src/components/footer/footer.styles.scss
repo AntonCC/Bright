@@ -1,0 +1,32 @@
+.footer {
+  padding: 1rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .side-a {
+      h2 {
+        margin-bottom: 1rem;
+        line-height: 1;
+      }
+      .icons {
+        svg {
+          height: 35px;
+          width: 35px;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    .side-b {
+      ul {
+        display: flex;
+        li {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

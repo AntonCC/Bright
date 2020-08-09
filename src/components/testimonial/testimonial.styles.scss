@@ -1,0 +1,25 @@
+.testimonial {
+  padding: 5rem 0;
+  background: #e5e5e5;
+  .container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .testimonial-content {
+      display: flex;
+      max-width: 800px;
+      margin-bottom: 1rem;
+      img {
+        width: 175px;
+        height: 175px;
+        border-radius: 200px;
+        object-fit: cover;
+        margin-right: 2rem;
+      }
+      .text {
+
+      }
+    }
+  }
+}
