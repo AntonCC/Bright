@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="side-a">
           <h2>Facilitate The Best Learning Environment.</h2>
           <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima omnis cupiditate enim blanditiis eligendi tenetur?</h4>
-          <CtaButton bgColor="lightgrey" text="Test Text" textColor="#111" />
+          <CtaButton bgColor="#0d4d4d" text="Test Text" textColor="#fff" />
         </div>
         <div className="side-b">
           <img src={StudentTeacher} alt="student and teacher"/>

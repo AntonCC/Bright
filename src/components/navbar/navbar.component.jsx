@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './navbar.styles.scss'
 import CtaButton from '../cta-button/cta-button.component'
 
-const Navbar = () => {
+const Navbar = ({ handleSidebar }) => {
   return (
     <div className="navbar">
       <div className="container">
@@ -18,7 +18,12 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
-        <CtaButton bgColor="#f9a21d" text="Try Bright" textColor="#111" />
+        <CtaButton className="nav-cta" bgColor="#f9a21d" text="Try Bright" textColor="#111" />
+        <div className="menu-burger" onClick={handleSidebar}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </div>
     </div>
   )

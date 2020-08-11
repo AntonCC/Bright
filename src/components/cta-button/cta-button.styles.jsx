@@ -26,8 +26,9 @@ const getButtonStyles = props => {
 export const ButtonContainer = styled.div`
   display: inline-block;
   padding: .5rem 2.5rem;
+  font-size: 1rem;
   border-radius: 3px;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
   ${getButtonStyles}
 `

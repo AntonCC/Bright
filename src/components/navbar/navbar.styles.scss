@@ -1,5 +1,7 @@
 .navbar {
   height: 50px;
+  background: #222;
+  color: #fff;
   .container {
     display: flex;
     justify-content: space-between;
@@ -8,6 +10,7 @@
       display: flex;
       .logo {
         margin-right: 2rem;
+        cursor: pointer;
       }
       nav {
         margin: auto 0;
@@ -17,8 +20,41 @@
             &:not(:last-child) {
               margin-right: 2rem;
             }
+            a {
+              color: #fff;
+            }
           }
         }
+      }
+    }
+  }
+  .menu-burger {
+    display: none;
+    .line {
+      width: 25px;
+      height: 2px;
+      background: #fff;
+      &:not(:last-child) {
+        margin-bottom: .25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar {
+    .container {
+      .left-group {
+        nav {
+          display: none;
+        }
+      }
+      .nav-cta {
+        display: none;
+      }
+      .menu-burger {
+        display: block;
+        cursor: pointer;
       }
     }
   }
