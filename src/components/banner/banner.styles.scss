@@ -1,5 +1,7 @@
 .banner {
-  padding: 5rem 0;
+  padding: 3rem 0;
+  background-position: bottom;
+  background-size: cover;
   .container {
     display: flex;
     justify-content: space-between;
@@ -8,6 +10,7 @@
       max-width: 500px;
       margin-right: 2rem;
       h2 {
+        position: relative;
         margin-bottom: 1.5rem;
       }
       h4 {

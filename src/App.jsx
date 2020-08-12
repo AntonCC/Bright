@@ -7,9 +7,11 @@ import BlurWrapper from './components/blur-wrapper/blur-wrapper.component'
 import Navbar from './components/navbar/navbar.component'
 import Footer from './components/footer/footer.component.jsx'
 import Home from './pages/home/home.component'
+import Services from './pages/services/services.component'
 
 const routes = [
-  {path: '/', name: 'Home', component: Home}
+  {path: '/', name: 'Home', component: Home},
+  {path: '/services', name: 'Services', component: Services}
 ]
 
 const App = () => {
@@ -39,7 +41,7 @@ const App = () => {
       <BlurWrapper open={appBlur}>
         <Navbar handleSidebar={openSidebar}/>
         {routes.map(({path, name, component}) => (
-          <Route key={ name } path={ path } component={ component } />
+          <Route key={ name } exact path={ path } component={ component } />
         ))}
         <Footer />
       </BlurWrapper>

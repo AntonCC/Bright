@@ -1,5 +1,5 @@
 .testimonial {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #e5e5e5;
   .container {
     display: flex;
@@ -8,8 +8,25 @@
     align-items: center;
     .testimonial-content {
       display: flex;
+      align-items: center;
       max-width: 800px;
       margin-bottom: 1rem;
+      h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        .q-right {
+          margin-right: .25rem;
+        }
+        .q-left {
+          margin-left: .25rem;
+        }
+        span {
+          svg {
+            height:20px;
+            width: 20px;
+          }
+        }
+      }
       img {
         width: 175px;
         height: 175px;
@@ -19,6 +36,19 @@
       }
       .text {
 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .testimonial {
+    .container {
+      .testimonial-content {
+        flex-direction: column;
+        img {
+          margin-bottom: 1rem;
+        }
       }
     }
   }

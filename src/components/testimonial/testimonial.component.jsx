@@ -4,6 +4,8 @@ import TestimonialPic from '../../imgs/testimonial.jpg'
 import { ReactComponent as Chalkboard } from '../../imgs/icons/chalkboard-teacher-solid.svg'
 import { ReactComponent as Graduation } from '../../imgs/icons/graduation-cap-solid.svg'
 import { ReactComponent as School } from '../../imgs/icons/school-solid.svg'
+import { ReactComponent as Qright } from '../../imgs/icons/qright.svg'
+import { ReactComponent as Qleft } from '../../imgs/icons/qleft.svg'
 import CtaButton from '../cta-button/cta-button.component'
 
 const Testimonial = () => {
@@ -13,13 +15,13 @@ const Testimonial = () => {
         <div className="testimonial-content">
           <img src={TestimonialPic} alt="portrait"/>
           <div className="text">
-            <h4>Students can concentrate on learning and teachers on teaching.</h4>
-            <h5>Jose Benerdier</h5>
+            <h4><span className="q-right"><Qleft/></span>Students can concentrate on learning and teachers on teaching.<span className="q-left"><Qright/></span></h4>
+            <h5>Jane Benerdier</h5>
             <p>Associate Vice President of IT</p>
             <p>Birmingham University</p>
           </div>
         </div>
-        <CtaButton bgColor="lightskyblue" text="Test Text" textColor="#fff" />
+        <CtaButton bgColor="#0d4d4d" text="Test Text" textColor="#fff" />
       </div>
     </div>
   )

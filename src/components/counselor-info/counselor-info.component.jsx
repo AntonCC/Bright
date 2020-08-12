@@ -8,7 +8,7 @@ const CounselorInfo = () => {
       <div className="container">
         <h2>Your Students Deserve The Best</h2>
         <h4>Get in contact with a counselor to help you set up Bright.</h4>
-        <CtaButton bgColor="lightgrey" text="Test Text" textColor="#fff" />
+        <CtaButton bgColor="#f9a21d" text="Contact Counselor" textColor="#111" />
       </div>
     </div>
   )

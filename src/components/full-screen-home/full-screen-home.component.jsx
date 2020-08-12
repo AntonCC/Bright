@@ -1,10 +1,10 @@
 import React from 'react'
-import './full-screen-banner.styles.scss'
+import './full-screen-home.styles.scss'
 import CtaButton from '../cta-button/cta-button.component'
 
-const FullScreenBanner = () => {
+const FullScreenHome = () => {
   return (
-    <div className="full-screen-banner">
+    <div className="full-screen-home">
       <div className="container">
         <h2>Lets Learn Together</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempore quia voluptate laborum quaerat fuga?</h4>
@@ -16,4 +16,4 @@ const FullScreenBanner = () => {
     </div>
   )
 }
-export default FullScreenBanner
+export default FullScreenHome
