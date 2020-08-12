@@ -13,7 +13,7 @@ const Navbar = ({ handleSidebar }) => {
             <ul>
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/services">Services</NavLink></li>
-              <li><NavLink to="/">About Us</NavLink></li>
+              <li><NavLink to="/about">About Us</NavLink></li>
               <li><NavLink to="/">Teaching Resources</NavLink></li>
             </ul>
           </nav>

@@ -4,18 +4,28 @@ import Teacher from '../../imgs/teacher-service.jpg'
 import CtaButton from '../cta-button/cta-button.component'
 
 const ServiceDescription = (props) => {
-  const { title, subtitle, body, button, reverse } = props
+  const { title, subtitle, body, button, img, reverse, backgroundColor } = props
+
+  let reverseClass = '' 
+  if(reverse) {
+    reverseClass += ' reverse'
+  }
+  let backgroundClass = ''
+  if(backgroundColor) {
+    backgroundClass += ' background'
+  }
+
   return (
-    <div className="service-description">
+    <div className={`service-description${backgroundClass}`}>
       <div className="container">
-        <div className="side-a" style={reverse ? { order: 2 } : null}>
+        <div className={`side-a${reverseClass}`}>
           <h2>{ title }</h2>
           <h4>{ subtitle }</h4>
           <p>{ body }</p>
           { button }
         </div>
-        <div className="side-b" style={reverse ? { order: 1 } : null}>
-          <img src={Teacher} alt="teacher"/>
+        <div className={`side-b${reverseClass}`}>
+          <img src={img} alt="teacher"/>
         </div>
       </div>
     </div>
