@@ -6,7 +6,7 @@ const MissionBanner = () => {
     <div className="mission-banner">
       <div className="container">
         <h2>Our Mission</h2>
-        <h4>Our mission is to make the process of learning as fun ans simple as possible.</h4>
+        <h4>Our mission is to make the process of learning as fun and simple as possible.</h4>
       </div>
     </div>
   )

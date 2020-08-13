@@ -1,11 +1,11 @@
 .goal-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: #F5F5F5;
   padding: 2rem;
   border-radius: 3px;
+  height: 100%;
   .icon {
     svg {
       height: 50px;
@@ -15,5 +15,8 @@
   }
   .text {
     text-align: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
   }
 }
