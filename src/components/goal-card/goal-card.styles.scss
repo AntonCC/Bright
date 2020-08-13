@@ -1,0 +1,19 @@
+.goal-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+  padding: 2rem;
+  border-radius: 3px;
+  .icon {
+    svg {
+      height: 50px;
+      width: 50px;
+      margin-bottom: 1rem;
+    }
+  }
+  .text {
+    text-align: center;
+  }
+}
