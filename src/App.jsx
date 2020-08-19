@@ -18,7 +18,7 @@ const routes = [
 
 const App = () => {
   const [sidebar, setSidebar] = useState(false)
-  const [backdrop, setBackdrop] = useState(false)
+  // const [backdrop, setBackdrop] = useState(false)
   const [appBlur, setAppBlur] = useState(false)
 
   const openSidebar = () => {

@@ -29,3 +29,26 @@
     }
   }
 }
+
+@media only screen and (max-width: 665px) {
+  .full-screen-home {
+    .container {
+      h2 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: .9rem;
+      }
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & div:nth-of-type(1) {
+          margin-right: 0rem;
+          // margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

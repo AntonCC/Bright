@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './full-screen-home.styles.scss'
 import CtaButton from '../cta-button/cta-button.component'
 
-const FullScreenHome = () => {
+const FullScreenHome = () => { 
   return (
     <div className="full-screen-home">
       <div className="container">

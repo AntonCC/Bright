@@ -2,15 +2,16 @@ import React from 'react'
 import './cards.styles.scss'
 import Card from '../card/card.component'
 
-const Cards = () => {
+const Cards = ({ news }) => {
+  console.log(news)
   return (
     <div className="cards">
       <div className="container">
         <h2 className="cards-title">Bright News</h2>
         <div className="group">
-          <Card />
-          <Card />
-          <Card />
+          {news.map(article => (
+            <Card article={article}/>
+          ))}
         </div>
       </div>
     </div>

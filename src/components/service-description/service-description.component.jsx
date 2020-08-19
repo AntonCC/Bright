@@ -1,7 +1,7 @@
 import React from 'react'
 import './service-description.styles.scss'
-import Teacher from '../../imgs/teacher-service.jpg'
-import CtaButton from '../cta-button/cta-button.component'
+// import Teacher from '../../imgs/teacher-service.jpg'
+// import CtaButton from '../cta-button/cta-button.component'
 
 const ServiceDescription = (props) => {
   const { title, subtitle, body, button, img, reverse, backgroundColor } = props

@@ -5,6 +5,7 @@ import Banner from '../../components/banner/banner.component'
 import Testimonial from '../../components/testimonial/testimonial.component'
 import Cards from '../../components/cards/cards.component'
 import CounselorInfo from '../../components/counselor-info/counselor-info.component'
+import news from './news'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <FullScreenHome />
       <Banner />
       <Testimonial />
-      <Cards />
+      <Cards news={news}/>
       <CounselorInfo />
     </div>
   )
