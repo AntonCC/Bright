@@ -3,7 +3,6 @@ import './cards.styles.scss'
 import Card from '../card/card.component'
 
 const Cards = ({ news }) => {
-  console.log(news)
   return (
     <div className="cards">
       <div className="container">
