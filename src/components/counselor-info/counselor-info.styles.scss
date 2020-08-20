@@ -17,3 +17,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 560px) {
+  .counselor-info {
+    .container {
+      h2 {
+        // font-size: 1.25rem;
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}

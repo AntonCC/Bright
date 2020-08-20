@@ -25,6 +25,29 @@
           &:not(:last-child) {
             margin-right: 1rem;
           }
+          a {
+            color: #111;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    .container {
+      .side-a {
+
+      }
+      .side-b {
+        ul {
+          flex-direction: column;
+          li {
+            &:not(:last-child) {
+              margin-right: 0rem;
+            }
+          }
         }
       }
     }

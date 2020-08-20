@@ -1,0 +1,27 @@
+.we-offer {
+  width: 100%;
+  padding: 2.5rem 0;
+  background: #e6f3f7;
+  .container {
+    .side-a {
+      .flag {
+        display: flex;
+        max-width: 310px;
+        max-height: 95px;
+        justify-content: flex-start;
+        align-items: center;
+        background: #3D6D7C;
+        color: #fff;
+        padding: 1rem;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        svg {
+          height: 55px;
+          width: 55px;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
