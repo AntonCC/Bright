@@ -5,10 +5,11 @@
   }
   .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     .side-a {
       max-width: 500px;
-      margin: 0 auto;
+      // margin: 0 auto;
       &.reverse {
         order: 2;
       }
@@ -23,7 +24,7 @@
       }
     }
     .side-b {
-      margin: 0 auto;
+      // margin: 0 auto;
       &.reverse {
         order: 1;
       }

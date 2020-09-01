@@ -4,7 +4,7 @@ import './service-description.styles.scss'
 // import CtaButton from '../cta-button/cta-button.component'
 
 const ServiceDescription = (props) => {
-  const { title, subtitle, body, button, img, reverse, backgroundColor } = props
+  const { title, subTitle, body, button, img, reverse, backgroundColor } = props
 
   let reverseClass = '' 
   if(reverse) {
@@ -20,7 +20,7 @@ const ServiceDescription = (props) => {
       <div className="container">
         <div className={`side-a${reverseClass}`}>
           <h2>{ title }</h2>
-          <h4>{ subtitle }</h4>
+          <h4>{ subTitle }</h4>
           <p>{ body }</p>
           { button }
         </div>

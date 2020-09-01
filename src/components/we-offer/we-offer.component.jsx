@@ -21,7 +21,10 @@ const WeOffer = () => {
           </span>
         </div>
         <div className="side-b">
-
+          <div className="text-group">
+            <h3>Bright provides all the tools needed to succeed.</h3>
+            <p>Keep all your school related activities on one platform. We work with teachers and students to help them perform their best.</p>
+          </div>
         </div>
       </div>
     </div>

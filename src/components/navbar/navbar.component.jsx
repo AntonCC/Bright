@@ -18,7 +18,9 @@ const Navbar = ({ handleSidebar }) => {
             </ul>
           </nav>
         </div>
-        <CtaButton className="nav-cta" bgColor="#f9a21d" text="Try Bright" textColor="#111" />
+        <NavLink to="/try">
+          <CtaButton className="nav-cta" bgColor="#f9a21d" text="Try Bright" textColor="#111" />
+        </NavLink>
         <div className="menu-burger" onClick={handleSidebar}>
           <div className="line"></div>
           <div className="line"></div>
