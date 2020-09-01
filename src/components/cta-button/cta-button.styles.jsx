@@ -30,7 +30,12 @@ export const ButtonContainer = styled.div`
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 150ms ease-in;
   ${getButtonStyles}
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 

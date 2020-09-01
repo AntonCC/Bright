@@ -2,18 +2,20 @@ const cardInfo = [
   {
     title: 'Basic',
     price: '$10',
-    features: ['Special Feature', 'Special Feature', 'Special Feature', 'Special Feature',]
+    activeFeatures: ['Homework Assistance', 'Tutoring'],
+    inactiveFeatures: ['Career Assessment', 'Internship Assistance', 'Resource Portal']
   },
   {
     title: 'Special',
     price: '$20',
-    features: ['Special Feature', 'Special Feature', 'Special Feature', 'Special Feature',],
-    active: true
+    activeFeatures: ['Homework Assistance', 'Tutoring', 'Career Assessment'],
+    inactiveFeatures: ['Internship Assistance', 'Resource Portal'],
+    inverse: true
   },
   {
     title: 'Full-Featured',
     price: '$30',
-    features: ['Special Feature', 'Special Feature', 'Special Feature', 'Special Feature',]
+    activeFeatures: ['Homework Assistance', 'Tutoring', 'Career Assessment', 'Internship Assistance', 'Resource Portal']
   }
 ]
 

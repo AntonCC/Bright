@@ -9,7 +9,7 @@ const PriceComparison = () => {
     <div className="price-comparison">
       <div className="container">
         {cardInfo.map(info => (
-          <PriceCard {...info}/>
+          <PriceCard key={cardInfo.title} {...info}/>
         ))}
       </div>
     </div>

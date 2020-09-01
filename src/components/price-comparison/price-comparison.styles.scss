@@ -1,7 +1,16 @@
 .price-comparison {
-  margin: 2.5rem 0;
+  margin: 5rem 0;
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  .price-comparison {
+    .container {
+      flex-direction: column;
+    }
   }
 }
