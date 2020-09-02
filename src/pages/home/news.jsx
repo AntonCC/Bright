@@ -1,4 +1,3 @@
-import React from 'react'
 import Mountain from '../../imgs/mountains.jpg'
 import Distance from '../../imgs/distance-learning.jpg'
 import Online from '../../imgs/online-learning.jpg'

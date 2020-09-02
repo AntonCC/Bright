@@ -31,7 +31,7 @@ export const ButtonContainer = styled.div`
   font-weight: 700;
   cursor: pointer;
   transition: all 150ms ease-in;
-  align-self: flex-start;
+  align-self: ${props => props.align};
   ${getButtonStyles}
 
   &:hover {

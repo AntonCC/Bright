@@ -4,8 +4,16 @@ import FullScreenHome from '../../components/full-screen-home/full-screen-home.c
 import Banner from '../../components/banner/banner.component'
 import Testimonial from '../../components/testimonial/testimonial.component'
 import Cards from '../../components/cards/cards.component'
-import CounselorInfo from '../../components/counselor-info/counselor-info.component'
+import PageBottomInfo from '../../components/page-bottom-info/page-bottom-info.component'
 import news from './news'
+
+const bottomInfo = {
+  title: 'Your Students Deserve The Best',
+  subTitle: 'Get in contact with a counselor to help you set up Bright.',
+  link: '/contact',
+  btnText: 'Contact Counselor'
+}
+
 
 const Home = () => {
   return (
@@ -14,7 +22,7 @@ const Home = () => {
       <Banner />
       <Testimonial />
       <Cards news={news}/>
-      <CounselorInfo />
+      <PageBottomInfo {...bottomInfo}/>
     </div>
   )
 }

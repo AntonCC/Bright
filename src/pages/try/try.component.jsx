@@ -2,7 +2,7 @@ import React from 'react'
 import FullScreenTry from '../../components/full-screen-try/full-screen-try.component'
 import ServiceDescription from '../../components/service-description/service-description.component'
 import PriceComparison from '../../components/price-comparison/price-comparison.component'
-import CounselorInfo from '../../components/counselor-info/counselor-info.component'
+import PageBottomInfo from '../../components/page-bottom-info/page-bottom-info.component'
 import ComputerPoint from '../../imgs/computer-point.jpg' 
 
 const serviceInfo = {
@@ -12,13 +12,21 @@ const serviceInfo = {
   backgroundColor: true
 }
 
+const bottomInfo = {
+  title: 'Your Students Deserve The Best',
+  subTitle: 'Get in contact with a counselor to help you set up Bright.',
+  link: '/contact',
+  btnText: 'Contact Counselor'
+}
+
+
 const Try = () => {
   return (
     <div>
       <FullScreenTry />
       <PriceComparison />
       <ServiceDescription {...serviceInfo}/>
-      <CounselorInfo />
+      <PageBottomInfo {...bottomInfo}/>
     </div>
   )
 }

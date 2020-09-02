@@ -2,7 +2,7 @@ import React from 'react'
 import FullScreenAbout from '../../components/full-screen-about/full-screen-about.component'
 import MissionBanner from '../../components/mission-banner/mission-banner.component'
 import Goals from '../../components/goals/goals.component'
-import CounselorInfo from '../../components/counselor-info/counselor-info.component'
+import PageBottomInfo from '../../components/page-bottom-info/page-bottom-info.component'
 import WeOffer from '../../components/we-offer/we-offer.component'
 import ServiceDescription from '../../components/service-description/service-description.component'
 import InternetPower from '../../imgs/internet-power.jpg'
@@ -13,6 +13,13 @@ const serviceInfo = {
   img: InternetPower
 }
 
+const bottomInfo = {
+  title: 'Your Students Deserve The Best',
+  subTitle: 'Get in contact with a counselor to help you set up Bright.',
+  link: '/contact',
+  btnText: 'Contact Counselor'
+}
+
 const About = () => {
   return (
     <div className="about">
@@ -21,7 +28,7 @@ const About = () => {
       <Goals />
       <WeOffer />
       <ServiceDescription {...serviceInfo}/>
-      <CounselorInfo />
+      <PageBottomInfo {...bottomInfo}/>
     </div>
   )
 }
