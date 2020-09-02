@@ -14,7 +14,7 @@ const Navbar = ({ handleSidebar }) => {
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/services">Services</NavLink></li>
               <li><NavLink to="/about">About Us</NavLink></li>
-              <li><NavLink to="/">Teaching Resources</NavLink></li>
+              <li><NavLink to="/Contact">Contact</NavLink></li>
             </ul>
           </nav>
         </div>

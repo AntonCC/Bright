@@ -10,12 +10,14 @@ import Home from './pages/home/home.component'
 import Services from './pages/services/services.component'
 import About from './pages/about/about.component'
 import Try from './pages/try/try.component'
+import Contact from './pages/contact/contact.component'
 
 const routes = [
   {path: '/', name: 'Home', component: Home},
   {path: '/services', name: 'Services', component: Services},
   {path: '/about', name: 'About', component: About},
-  {path: '/try', name: 'Try', component: Try}
+  {path: '/try', name: 'Try', component: Try},
+  {path: '/contact', name: 'Contact', component: Contact}
 ]
 
 const App = () => {

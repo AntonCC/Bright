@@ -1,0 +1,29 @@
+.full-screen-contact {
+  height: 300px;
+  background: linear-gradient(to right, rgba(25,42,86,.85), rgba(25,42,86,.85)), url('../../imgs/contact-phone.jpg') no-repeat;
+  background-position: 50% 20%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: .5rem;
+      text-shadow: 2px 2px #222;
+    }
+    h4 {
+      font-size: 1.25rem;
+      color: #fff;
+      opacity: .9; 
+      font-weight: 400;
+      text-shadow: 2px 2px #222;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: #fff;
+      text-shadow: 2px 2px #222;
+    }
+  }
+}
