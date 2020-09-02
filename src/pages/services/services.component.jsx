@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './services.styles.scss'
 import FullScreenServices from '../../components/full-screen-services/full-screen-services.component'
 import ServiceDescription from '../../components/service-description/service-description.component'
@@ -14,6 +14,10 @@ const bottomInfo = {
 
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="services">
       <FullScreenServices />

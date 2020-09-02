@@ -9,9 +9,12 @@
     align-items: center;
     .left-group {
       display: flex;
-      .logo {
-        margin-right: 2rem;
-        cursor: pointer;
+      a {
+        .logo {
+          margin-right: 2rem;
+          cursor: pointer;
+          color: #fff;
+        }
       }
       nav {
         margin: auto 0;

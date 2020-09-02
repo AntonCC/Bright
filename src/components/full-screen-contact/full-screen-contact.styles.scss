@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     h2 {
       font-size: 2.5rem;
       color: #fff;
@@ -24,6 +25,19 @@
     p {
       color: #fff;
       text-shadow: 2px 2px #222;
+    }
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .full-screen-contact {
+    .container {
+      h2 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
     }
   }
 }

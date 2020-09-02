@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import FullScreenTry from '../../components/full-screen-try/full-screen-try.component'
 import ServiceDescription from '../../components/service-description/service-description.component'
 import PriceComparison from '../../components/price-comparison/price-comparison.component'
@@ -21,6 +21,10 @@ const bottomInfo = {
 
 
 const Try = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <FullScreenTry />

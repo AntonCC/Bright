@@ -1,7 +1,7 @@
 import React from 'react'
 import './service-description.styles.scss'
-// import Teacher from '../../imgs/teacher-service.jpg'
-// import CtaButton from '../cta-button/cta-button.component'
+import { NavLink } from 'react-router-dom'
+
 
 const ServiceDescription = (props) => {
   const { title, subTitle, body, button, img, reverse, backgroundColor } = props
@@ -22,7 +22,9 @@ const ServiceDescription = (props) => {
           <h2>{ title }</h2>
           <h4>{ subTitle }</h4>
           <p>{ body }</p>
-          { button }
+          <NavLink to="/try">
+            { button }
+          </NavLink>
         </div>
         <div className={`side-b${reverseClass}`}>
           <img src={img} alt="teacher"/>

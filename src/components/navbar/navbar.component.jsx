@@ -8,7 +8,9 @@ const Navbar = ({ handleSidebar }) => {
     <div className="navbar">
       <div className="container">
         <div className="left-group">
-          <h2 className="logo">Bright</h2>
+          <NavLink to="/to">
+            <h2 className="logo">Bright</h2>
+          </NavLink>
           <nav>
             <ul>
               <li><NavLink to="/">Home</NavLink></li>

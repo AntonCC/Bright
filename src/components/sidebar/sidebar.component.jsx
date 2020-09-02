@@ -8,11 +8,13 @@ const Sidebar = ({ open, handleSidebar }) => {
     <nav className={`sidebar ${open ? 'open' : ''}`}>
       <ul>
         <li><NavLink exact to="/" onClick={handleSidebar}>Home</NavLink></li>
-        <li><NavLink exact to="/" onClick={handleSidebar}>Services</NavLink></li>
-        <li><NavLink exact to="/" onClick={handleSidebar}>About Us</NavLink></li>
-        <li><NavLink exact to="/" onClick={handleSidebar}>Teaching resources</NavLink></li>
+        <li><NavLink exact to="/services" onClick={handleSidebar}>Services</NavLink></li>
+        <li><NavLink exact to="/about" onClick={handleSidebar}>About Us</NavLink></li>
+        <li><NavLink exact to="/contact" onClick={handleSidebar}>Contact</NavLink></li>
       </ul>
-      <CtaButton bgColor="lightgrey" text="Test Text" textColor="#fff" />
+      <NavLink to="/try" onClick={handleSidebar}>
+        <CtaButton bgColor="lightgrey" text="Try Bright" textColor="#111" bgColor="#f9a21d" />
+      </NavLink>
     </nav>
   )
 }
