@@ -29,3 +29,10 @@ export const serviceInfo = [
     img: Career,
   },
 ]
+
+export const bottomInfo = {
+  title: 'Your Students Deserve The Best',
+  subTitle: 'Get in contact with a counselor to help you set up Bright.',
+  link: '/contact',
+  btnText: 'Contact Counselor'
+}

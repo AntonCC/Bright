@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom'
 import './App.scss';
+import ScrollTop from './components/scroll-top/scroll-top.component'
 import Sidebar from './components/sidebar/sidebar.component'
 import Backdrop from './components/backdrop/backdrop.component'
 import BlurWrapper from './components/blur-wrapper/blur-wrapper.component'
@@ -22,7 +23,6 @@ const routes = [
 
 const App = () => {
   const [sidebar, setSidebar] = useState(false)
-  // const [backdrop, setBackdrop] = useState(false)
   const [appBlur, setAppBlur] = useState(false)
 
   const openSidebar = () => {
@@ -42,6 +42,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <ScrollTop />
       <Sidebar open={sidebar} handleSidebar={closeSidebar}/>
       {renderBackdrop}
       <BlurWrapper open={appBlur}>

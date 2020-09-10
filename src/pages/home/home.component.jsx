@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './home.styles.scss'
 import FullScreenHome from '../../components/full-screen-home/full-screen-home.component'
 import Banner from '../../components/banner/banner.component'
@@ -16,10 +16,6 @@ const bottomInfo = {
 
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <div className="home">
       <FullScreenHome />

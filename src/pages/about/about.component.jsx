@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import FullScreenAbout from '../../components/full-screen-about/full-screen-about.component'
 import MissionBanner from '../../components/mission-banner/mission-banner.component'
 import Goals from '../../components/goals/goals.component'
@@ -21,10 +21,6 @@ const bottomInfo = {
 }
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <div className="about">
       <FullScreenAbout />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import FullScreenContact from '../../components/full-screen-contact/full-screen-contact.component'
 import ContactForm from '../../components/contact-form/contact-form.component'
 import PageBottomInfo from '../../components/page-bottom-info/page-bottom-info.component'
@@ -11,10 +11,6 @@ const bottomInfo = {
 }
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <div>
       <FullScreenContact />
