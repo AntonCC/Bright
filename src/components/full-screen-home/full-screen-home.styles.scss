@@ -22,7 +22,7 @@
       font-weight: 400;
     }
     .btn-group {
-      & div:nth-of-type(1) {
+      & button:nth-of-type(1) {
         margin-right: 2rem;
       }
     }
@@ -31,6 +31,7 @@
 
 @media only screen and (max-width: 665px) {
   .full-screen-home {
+    height: calc(100vh - 50px);
     .container {
       h2 {
         font-size: 1.75rem;

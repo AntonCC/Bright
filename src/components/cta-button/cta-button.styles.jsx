@@ -1,11 +1,5 @@
 import styled, { css } from 'styled-components'
 
-// const ctaButtonStyles = css`
-//   display: inline-block;
-//   padding: .5rem 2.5rem;
-//   border-radius: 3px;
-// `
-
 const ctaButtonStyles = css`
   background: ${props => props.bgColor};
   color: ${props => props.textColor};
@@ -23,19 +17,27 @@ const getButtonStyles = props => {
   }
 }
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.button`
   display: inline-block;
+  background: none;
+  outline: none;
+  border: none;
   padding: .5rem 2.5rem;
   font-size: 1rem;
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
   transition: all 150ms ease-in;
+  user-select: none;
   align-self: ${props => props.align};
   ${getButtonStyles}
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(.85);
   }
 `
 

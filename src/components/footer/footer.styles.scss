@@ -12,8 +12,16 @@
         svg {
           height: 35px;
           width: 35px;
+          cursor: pointer;
+          transition: transform 70ms ease-in;
           &:not(:last-child) {
             margin-right: 1rem;
+          }
+          &:hover {
+            opacity: .5;
+          }
+          &:active {
+            transform: scale(.85);
           }
         }
       }
@@ -24,6 +32,9 @@
         li {
           &:not(:last-child) {
             margin-right: 1rem;
+          }
+          &:hover {
+            opacity: .5;
           }
           a {
             color: #111;
@@ -44,6 +55,7 @@
         ul {
           flex-direction: column;
           li {
+            margin-bottom: .5rem;
             &:not(:last-child) {
               margin-right: 0rem;
             }

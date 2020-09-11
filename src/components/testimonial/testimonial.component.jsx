@@ -21,7 +21,7 @@ const Testimonial = () => {
             <p>Birmingham University</p>
           </div>
         </div>
-        <CtaButton bgColor="#0d4d4d" text="Test Text" textColor="#fff" />
+        <CtaButton bgColor="#0d4d4d" text="More About Us" textColor="#fff" />
       </div>
     </div>
   )

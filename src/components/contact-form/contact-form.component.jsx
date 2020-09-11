@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact-form.styles.scss'
 import CtaButton from '../cta-button/cta-button.component'
 
 const ContactForm = () => {
+  const formRef = useRef(null)
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    alert('Thank you for reaching out!')
+    formRef.current.reset()
+  }
+
   return (
     <div className="contact-form">
       <div className="container">
         <div className="side-a">
           <h3>Get in Touch</h3>
           <p>Fill out the form below, and we will quickly get in touch.</p>
-          <form>
+          <form onSubmit={handleSubmit} ref={formRef}>
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
-            <CtaButton text="Submit" textColor="#fff" bgColor="#0d4d4d" align="flex-start"/>
+            <CtaButton type="submit" text="Submit" textColor="#fff" bgColor="#0d4d4d" align="flex-start"/>
           </form>
         </div>
         <div className="side-b">
