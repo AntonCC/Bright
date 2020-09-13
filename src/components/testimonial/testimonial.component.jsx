@@ -1,9 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './testimonial.styles.scss'
 import TestimonialPic from '../../imgs/testimonial.jpg'
-// import { ReactComponent as Chalkboard } from '../../imgs/icons/chalkboard-teacher-solid.svg'
-// import { ReactComponent as Graduation } from '../../imgs/icons/graduation-cap-solid.svg'
-// import { ReactComponent as School } from '../../imgs/icons/school-solid.svg'
 import { ReactComponent as Qright } from '../../imgs/icons/qright.svg'
 import { ReactComponent as Qleft } from '../../imgs/icons/qleft.svg'
 import CtaButton from '../cta-button/cta-button.component'
@@ -21,7 +19,9 @@ const Testimonial = () => {
             <p>Birmingham University</p>
           </div>
         </div>
-        <CtaButton bgColor="#0d4d4d" text="More About Us" textColor="#fff" />
+        <NavLink to='/about'>
+          <CtaButton bgColor="#0d4d4d" text="More About Us" textColor="#fff" />
+        </NavLink>
       </div>
     </div>
   )

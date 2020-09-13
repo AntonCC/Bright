@@ -20,7 +20,7 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit} ref={formRef}>
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <textarea name="message" placeholder="Message" cols="30" rows="10" required />
             <CtaButton type="submit" text="Submit" textColor="#fff" bgColor="#0d4d4d" align="flex-start"/>
           </form>
         </div>
