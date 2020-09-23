@@ -27,7 +27,7 @@ const PriceCard = ({ title, price, activeFeatures, inactiveFeatures, inverse}) =
           }
         </ul>
       </div>
-      <CtaButton text="Purchase" textColor="#fff" bgColor={`${inverse ? "#3d3d3d" : "#db5a6b"}`} />
+      <CtaButton onClick={() => alert('Thanks for your purchase!')} text="Purchase" textColor="#fff" bgColor={`${inverse ? "#3d3d3d" : "#db5a6b"}`} />
     </div>
   )
 }

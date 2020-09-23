@@ -1,6 +1,6 @@
 .full-screen-contact {
   height: 300px;
-  background: linear-gradient(to right, rgba(25,42,86,.85), rgba(25,42,86,.85)), url('../../imgs/contact-phone.jpg') no-repeat;
+  background: linear-gradient(to right, rgba(25,42,86,.85), rgba(25,42,86,.85)), url('../../imgs/contact-phone.jpg') center/cover no-repeat;
   background-position: 50% 20%;
   .container {
     display: flex;

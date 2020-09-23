@@ -1,6 +1,6 @@
 .full-screen-about {
   height: 400px;
-  background: linear-gradient(to right, rgba(25,42,86,.5), rgba(25,42,86,.5)), url('../../imgs/classroom-about.jpg') no-repeat;
+  background: linear-gradient(to right, rgba(25,42,86,.5), rgba(25,42,86,.5)), url('../../imgs/classroom-about.jpg') center/cover no-repeat;
   background-position: 50% 20%;
   .container {
     display: flex;
