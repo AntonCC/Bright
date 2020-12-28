@@ -29,6 +29,10 @@
               &:hover {
                 filter: brightness(75%);
               }
+              &.active {
+                text-decoration: underline;
+                filter: brightness(75%);
+              }
             }
           }
         }
