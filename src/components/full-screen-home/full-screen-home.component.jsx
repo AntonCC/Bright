@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './full-screen-home.styles.scss'
+import debounce from '../../helperFuncs/debounce'
 import { NavLink } from 'react-router-dom'
 import CtaButton from '../cta-button/cta-button.component'
 
-const FullScreenHome = () => { 
+const FullScreenHome = () => {
+  const [innerHeight, setInnerHeight] = useState(window.innerHeight)
+
+  useEffect(() => {
+    window.addEventListener('resize', debouncedHandleHeightChange)
+
+    return () => {
+      window.removeEventListener('resize', debouncedHandleHeightChange)
+    }
+  }, [])
+
+  const handleHeightChange = () => {
+    setInnerHeight(window.innerHeight)
+  }
+
+  const debouncedHandleHeightChange = () => {
+    debounce(handleHeightChange, 75)
+  }
+  
   return (
     <div className="full-screen-home">
       <div className="container">
